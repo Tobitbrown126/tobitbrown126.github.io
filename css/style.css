@@ -213,3 +213,339 @@ flex-wrap:wrap;
 color:white;
 text-decoration:none;
 }
+/* ==========================================
+   TUTORIALS PAGE
+========================================== */
+
+.page-hero{
+    height:380px;
+    background:url("../assets/hero-bg.jpg") center center/cover no-repeat;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    overflow:hidden;
+}
+
+.page-hero .overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(11,79,113,.75);
+}
+
+.hero-text{
+    position:relative;
+    z-index:2;
+    color:white;
+}
+
+.hero-text h1{
+    font-size:56px;
+    margin-bottom:15px;
+    font-weight:700;
+}
+
+.hero-text p{
+    font-size:20px;
+    max-width:700px;
+    margin:auto;
+    line-height:1.7;
+}
+
+/* Search */
+
+.search-section{
+    padding:60px 8% 30px;
+    text-align:center;
+}
+
+#searchInput{
+
+    width:100%;
+    max-width:700px;
+
+    padding:18px 25px;
+
+    border-radius:50px;
+
+    border:1px solid #ddd;
+
+    font-size:17px;
+
+    outline:none;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.06);
+
+}
+
+#searchInput:focus{
+
+    border:1px solid #0B4F71;
+
+}
+
+/* Categories */
+
+.categories{
+
+    padding:40px 8%;
+
+}
+
+.categories h2{
+
+    text-align:center;
+    color:#0B4F71;
+    margin-bottom:35px;
+    font-size:38px;
+
+}
+
+.category-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:20px;
+
+}
+
+.category-card{
+
+background:white;
+
+padding:30px;
+
+text-align:center;
+
+border-radius:15px;
+
+font-weight:600;
+
+cursor:pointer;
+
+transition:.3s;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.category-card:hover{
+
+background:#0B4F71;
+
+color:white;
+
+transform:translateY(-6px);
+
+}
+
+/* Tutorial Cards */
+
+.tutorials{
+
+padding:80px 8%;
+
+}
+
+.tutorials h2{
+
+text-align:center;
+
+font-size:40px;
+
+margin-bottom:50px;
+
+color:#0B4F71;
+
+}
+
+.tutorial-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(330px,1fr));
+
+gap:35px;
+
+}
+
+.tutorial-card{
+
+background:white;
+
+border-radius:18px;
+
+overflow:hidden;
+
+box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+transition:.35s;
+
+}
+
+.tutorial-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.tutorial-card img{
+
+width:100%;
+
+height:220px;
+
+object-fit:cover;
+
+display:block;
+
+}
+
+.tutorial-content{
+
+padding:25px;
+
+}
+
+.tutorial-content h3{
+
+font-size:24px;
+
+margin:18px 0 15px;
+
+color:#0B4F71;
+
+}
+
+.tutorial-content p{
+
+line-height:1.8;
+
+margin-bottom:25px;
+
+color:#555;
+
+}
+
+.tutorial-content a{
+
+text-decoration:none;
+
+font-weight:600;
+
+color:#0B4F71;
+
+}
+
+/* Difficulty */
+
+.level{
+
+display:inline-block;
+
+padding:8px 18px;
+
+border-radius:50px;
+
+font-size:14px;
+
+font-weight:600;
+
+color:white;
+
+}
+
+.beginner{
+
+background:#2ECC71;
+
+}
+
+.intermediate{
+
+background:#F39C12;
+
+}
+
+.advanced{
+
+background:#E74C3C;
+
+}
+
+/* Newsletter */
+
+.newsletter{
+
+background:#0B4F71;
+
+padding:80px 8%;
+
+text-align:center;
+
+color:white;
+
+}
+
+.newsletter h2{
+
+font-size:42px;
+
+margin-bottom:20px;
+
+}
+
+.newsletter p{
+
+max-width:700px;
+
+margin:auto;
+
+line-height:1.8;
+
+margin-bottom:35px;
+
+font-size:18px;
+
+}
+
+/* Active Menu */
+
+.nav-links .active{
+
+color:#7AC142;
+
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+.hero-text h1{
+
+font-size:38px;
+
+}
+
+.hero-text p{
+
+font-size:17px;
+
+}
+
+.page-hero{
+
+height:300px;
+
+}
+
+.tutorial-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
